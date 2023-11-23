@@ -1,4 +1,5 @@
-# Azure-documentation
+Azure-documentation
+=======================
 
  ## Purpose
 
@@ -13,7 +14,7 @@ The web application will also promote the business by showing off the brand new 
 
 ## Functionality & Features
 
- ### Browsing (non-member)
+ #### Browsing (non-member)
 - The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
@@ -21,7 +22,7 @@ The web application will also promote the business by showing off the brand new 
 - View pricing
 - Create an account
 
-### Browsing (logged-member - Customer)
+#### Browsing (logged-member - Customer)
 - The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
@@ -32,7 +33,7 @@ The web application will also promote the business by showing off the brand new 
 - Create/view/cancel their own bookings 
 - View own profile
 
-### Browsing (logged in member- Workers)
+#### Browsing (logged in member- Workers)
 - The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
@@ -44,7 +45,7 @@ The web application will also promote the business by showing off the brand new 
 - View all profiles
 - Create new Customer profiles
 
-### Browsing (logged in member- Admin)
+#### Browsing (logged in member- Admin)
 - The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’  form
@@ -58,7 +59,7 @@ The web application will also promote the business by showing off the brand new 
 - Create/edit/delete services
 
 
-## Target Audience
+### Target Audience
 
 The application will be aimed at everyone that enjoys swimming of all experience levels, working or living in the local area. Further, there will be emphasis on future growth of the business and expansion of services that can be expected in the near future, such as swimming classes for all ages. 
 
@@ -67,7 +68,7 @@ The application will be designed with user experience in mind, as the pools are 
 
 
 
-## Tech Stack
+### Tech Stack
 
 - **Frontend:** HTML5, CSS, REACT.JS, JavaScript
 - **Backend:** Node, Express.JS
@@ -76,3 +77,13 @@ The application will be designed with user experience in mind, as the pools are 
 - **Project Management Tools:** Discord, Trello
 - **Utilities:** draw.io, Lucidchart, Figma
 - **DevOps:** Github, VS Code
+
+## Data Flow Diagram
+
+## Application Architecture Diagram
+
+The application architecture diagram displays the structure of the Azure Splash app, and the flow of data. The application is made up of three components: frontend, backend and database.
+
+![Application Architecture Diagram](/resources/Application%20Architecture%20Diagram.png)
+
+
