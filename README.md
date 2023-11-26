@@ -86,4 +86,35 @@ The application architecture diagram displays the structure of the Azure Splash 
 
 ![Application Architecture Diagram](/resources/Application%20Architecture%20Diagram.png)
 
+## Wireframes
+
+Figma was used to create wireframes for this project. We decided to use image and full color instead of placeholder images. This will allow quicker approval from the client. After discussions with the owner of Azure Splash, we worked out that most of the users will be using a mobile device. With this in mind we decided to take a mobile first approach to the design. 
+
+### Design Features
+
+#### Color Scheme
+![Website colors](/resources/color_scheme.png)
+
+### Buttons
+
+The buttons will be designed with a a slight rounded corner on a rectangle. The standard button will have Azure as a color with black text. Using OnHover the button will change to lighter color, text will be capitalized and white.
+
+![Button examples](/resources/buttons.png)
+
+### Nav Bar
+
+The Nav Bar will be sticky at the top of the page making the menu accessible when scrolling the content on each page. The same color format then the buttons will be used on the Nav Bar. This will keep the site looking uniform and helping the user navigate the site easier.
+
+
+![Navbar examples](/resources/navbar.png)
+
+## Mobile Design
+
+
+
+
+
+
+## Project Management
+
 
