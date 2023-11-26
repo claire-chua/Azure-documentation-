@@ -3,9 +3,9 @@ Azure-documentation
 
  ## Purpose
 
-We were recently approached by a client; an owner of a freshly renovated aquatic centre, Azure Splash. Due to the high volume of patrons, the centre has had to implement mandatory reservations for each pool lane. There are currently two pools with a total of 6 lanes per pool. At the moment, the only way to reserve a lane is via phone or in-person as the facility does not have a website.This has led to multiple customers walking-in and unable to go for a swim, leaving them unsatisfied and resulting in customers visiting a competitor or worse yet, not continuing their patronage. Further, it was keeping staff tied to the phones in order to keep up with reservations, and preventing them from fulfilling their other duties..
+We were recently approached by a client; an owner of a freshly renovated aquatic centre, Azure Splash. Due to the high volume of patrons, the centre has had to implement mandatory reservations for each pool lane. There are currently two pools with a total of 6 lanes per pool. At the moment, the only way to reserve a lane is via phone or in-person as the facility does not have a website.This has led to multiple customers walking-in and unable to go for a swim, leaving them unsatisfied and resulting in customers visiting a competitor or worse yet, not continuing their patronage. Further, it was keeping staff tied to the phones in order to keep up with reservations, and preventing them from fulfilling their other duties.
 
-The goal for this web application is to enable users to make a booking for available lanes in the allocated time slots. The slots are for half an hour, and each customer can reserve a maximum of two consecutive slots. This will allow customers to be guaranteed a lane, and for staff to be freed up with assisting customers in the venue.In the future, they would like to expand their services by adding a sauna. As such,  a ‘coming soon’  booking space for this will be displayed on the web application. This will also enable the centre to introduce other services, such as  swimming classes in the future.
+The goal for this web application is to enable users to make a booking for available lanes in the allocated time slots. The slots are for half an hour, and each customer can reserve a maximum of two consecutive slots. This will allow customers to be guaranteed a lane, and for staff to be freed up with assisting customers in the venue. In the future, they would like to expand their services by adding a sauna. As such, a ‘coming soon’ booking space for this will be displayed on the web application. This will also enable the centre to introduce other services, such as swimming classes in the future.
 
 The web application will also promote the business by showing off the brand new facilities, as well as the competitive prices. It will also encourage users to create an account, to view availability and make bookings as this will be unavailable to users without an account.The overarching goal is to ensure that the pool is always booked, hence guaranteeing customers a lane when they turn up for a swim. 
 
@@ -33,7 +33,7 @@ The web application will also promote the business by showing off the brand new 
 - Create/view/cancel their own bookings 
 - View own profile
 
-#### Browsing (logged in member- Workers)
+#### Browsing (logged in member - Workers)
 - The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
@@ -84,6 +84,7 @@ The application will be designed with user experience in mind, as the pools are 
 
 The application architecture diagram displays the structure of the Azure Splash app, and the flow of data. The application is made up of three components: frontend, backend and database.
 
-![Application Architecture Diagram](/resources/Application%20Architecture%20Diagram.png)
+![Screenshot 2023-11-26 222905](https://github.com/Azure-Splash/Azure-documentation-/assets/126572960/0da3a3a7-3ba7-41f5-8a01-ec72bff17590)
+
 
 
