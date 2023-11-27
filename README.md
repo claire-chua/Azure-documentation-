@@ -84,6 +84,8 @@ The application will be designed with user experience in mind, as the pools are 
 
 ## Data Flow Diagram
 
+<img  alt="Data Flow"   src="./resources/Aquatic_DFD.png" />
+
 ## Application Architecture Diagram
 
 The application architecture diagram displays the structure of the Azure Splash app, and the flow of data. The application is made up of three components: frontend, backend and database.
@@ -168,9 +170,18 @@ The Nav Bar will be sticky at the top of the page making the menu accessible whe
 
 ***
 #### Home & About Us Pages
+
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_home.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_about.png" />
+
 #### Services & Contact Pages
+
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_services.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_about.png" />
+
 #### Login & Register Pages
 #### Bookings Pages
+
 
 
 
