@@ -177,21 +177,18 @@ The Nav Bar will be sticky at the top of the page making the menu accessible whe
 #### Services & Contact Pages
 
 <img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_services.png" />
-<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_about.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_contact.png" />
 
 #### Login & Register Pages
+
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_login.png" />
+
 #### Bookings Pages
 
-
-
-
-
-
-
-
-
-
-
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings1.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings2.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings3.png" />
 
 
 ## Project Management
