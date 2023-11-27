@@ -86,6 +86,35 @@ The application architecture diagram displays the structure of the Azure Splash 
 
 ![Screenshot 2023-11-26 222905](https://github.com/Azure-Splash/Azure-documentation-/assets/126572960/0da3a3a7-3ba7-41f5-8a01-ec72bff17590)
 
+## User Stories
+
+### Admin 
+
+As an admin, I want to be able to view all bookings so that I may be prepared and organised for current and upcoming bookings.
+
+As an admin, I want to block lanes and time slots for maintenance to ensure that the facility is able to undergo any required upkeep with minimal disruptions.
+
+As an admin, I want to create and manage the bookings for additional spaces, so that I may expand the services offered to customers online.
+
+As an admin, I want to be able to create time slots and lanes to effectively manage the availability of the aquatic centre. 
+
+### Customer
+
+As a customer, I want to book a lane in a specific time slot to ensure that I am able to swim, regardless of the number of customers in the aquatic centre.
+
+As a customer, I want to be able to view available times and lanes to ensure that there are no conflicts, whilst effectively choosing the best option. 
+
+As a customer, I would like to edit or delete my own bookings  in the case of any changes in my schedule.
+
+
+### Worker
+
+As a worker, I want to delete and edit any booking to ensure that I’m able to assist customers with their requests.
+
+As a worker, I would like to see available times and lanes to assist customers with their bookings.
+
+As a worker, I would like to be able to see relevant information regarding maintenance so that I may provide warnings to customers and evacuate the areas if necessary. 
+
 
 ## Wireframes
 
@@ -108,7 +137,42 @@ The Nav Bar will be sticky at the top of the page making the menu accessible whe
 
 ![Navbar examples](/resources/navbar.png)
 
-## Mobile Design
+### Mobile Design
+
+*** 
+
+#### Home & About Us Pages
+
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_home.png" />
+<img  alt="mobile wireframe" height="500px" width="500px" src="./resources/mobile_about.png" />
+
+#### Services & Contact Pages
+
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_services.png" />
+<img  alt="mobile wireframe" height="500px" width="500px" src="./resources/mobile_contact.png" />
+
+#### Login & Register Pages
+
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_login.png" />
+
+#### Bookings Pages
+
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_bookings.png" />
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_bookings1.png" />
+
+### Desktop & Tablet
+
+***
+#### Home & About Us Pages
+#### Services & Contact Pages
+#### Login & Register Pages
+#### Bookings Pages
+
+
+
+
+
+
 
 
 
