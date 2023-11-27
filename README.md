@@ -1,4 +1,8 @@
-Azure-documentation
+ <p align="center">
+ <img  alt="mobile wireframe"  height="200px" width="200px" src="./resources/logo.png" />
+ </p>
+
+Documentation           
 =======================
 
  ## Purpose
