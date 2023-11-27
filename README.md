@@ -94,6 +94,14 @@ The application architecture diagram displays the structure of the Azure Splash 
 
 ## User Stories
 
+### Persona 1: Stacy
+
+#### Background
+Stacy is a 45 year-old manager at the aquatic centre. She has been tasked with overseeing operations at the facility, and ensuring that both customers and workers are satisfied.
+
+#### Goals and Behaviour
+Stacy would like for customers to stay informed on all matters regarding the facility, such as maintenance and services. Further, she would like to alter lanes or times available in the case of changes due to maintenace or public holidays etc. Next, she would like to view current and future bookings, to ensure that there are an appropriate number of staff to handle all required duties. 
+
 ### Admin 
 
 As an admin, I want to be able to view all bookings so that I may be prepared and organised for current and upcoming bookings.
@@ -104,14 +112,34 @@ As an admin, I want to create and manage the bookings for additional spaces, so 
 
 As an admin, I want to be able to create time slots and lanes to effectively manage the availability of the aquatic centre. 
 
+***
+### Persona 2: Jean
+
+#### Background
+Jean is a 26 year-old avid swimmer, who works at an office from 9 - 5 p.m. She prefers to swim daily, typically in the early morning.
+
+#### Goals and Behaviour
+Jean would like to book lanes in advance, to ensure that she is able to complete her morning swim daily.
+Additionally, she would like the entire process to be seamless and flexible.
+
 ### Customer
 
 As a customer, I want to book a lane in a specific time slot to ensure that I am able to swim, regardless of the number of customers in the aquatic centre.
 
 As a customer, I want to be able to view available times and lanes to ensure that there are no conflicts, whilst effectively choosing the best option. 
 
-As a customer, I would like to edit or delete my own bookings  in the case of any changes in my schedule.
+As a customer, I would like to edit or delete my own bookings in the case of any changes in my schedule.
 
+***
+
+### Persona 3: Tom
+
+#### Background
+Tom is a 30 year-old worker at the aquatic centre. He enjoys working there, but has noticed that the recent spike in customers has resulted in a number of people unable to swim. Further, this has resulted in a recent increase in bookings through the phone, and preventing staff from completing other duties.
+
+#### Goals and Behaviour
+Tom would like for customers to be able to view available lanes and time slots, and complete their own bookings instead of calling in to check with staff. 
+He would also like to have an overview of all the current and future bookings, as well as unavailable times for lanes to stay informed.
 
 ### Worker
 
