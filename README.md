@@ -18,8 +18,8 @@ The web application will also promote the business by showing off the brand new 
 
 ## Functionality & Features
 
- #### Browsing (non-member)
-- The user will be able to:
+#### Browsing (non-member)
+The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
 - View opening hours and contact details
@@ -27,7 +27,7 @@ The web application will also promote the business by showing off the brand new 
 - Create an account
 
 #### Browsing (logged-member - Customer)
-- The user will be able to:
+The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
 - View opening hours and all contact details
@@ -38,7 +38,7 @@ The web application will also promote the business by showing off the brand new 
 - View own profile
 
 #### Browsing (logged in member - Workers)
-- The user will be able to:
+The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’ form
 - View opening hours and contact details
@@ -50,7 +50,7 @@ The web application will also promote the business by showing off the brand new 
 - Create new Customer profiles
 
 #### Browsing (logged in member- Admin)
-- The user will be able to:
+The user will be able to:
 - View all the services available at the centre
 - Send enquiries with the ‘contact us’  form
 - View opening hours and contact details
