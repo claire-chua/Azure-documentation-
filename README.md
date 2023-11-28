@@ -148,10 +148,6 @@ _bkdate | Date Of Booking
 </td></tr> </table>
 
 
-
-
-
-
 ## Application Architecture Diagram
 
 The application architecture diagram displays the structure of the Azure Splash app, and the flow of data. The application is made up of three components: frontend, backend and database.
@@ -287,4 +283,20 @@ The Nav Bar will be sticky at the top of the page making the menu accessible whe
 
 ## Project Management
 
+The following software was used for project management and planning:
+- Discord: was used to communicate with each other, text, voice and screen sharing
+- Google Docs: used to share ideas and images and other information before loading onto readme.md file
+- Trello: for agile planning. Cards and lists were created with the tasks that needed to be completed with due dates. Questions, comments and feedback were also placed on the cards. The requirements were put into cards and then split to task for the team to complete.
+
+The full trello board can be viewed here: [Trello Board](https://trello.com/b/wGXnXTBK/azure-splash)
+
+![Trello Board](/resources/trello_start.png)
+![Trello Board](/resources/trello_setup-card.png)
+![Trello Board](/resources/complete_setup.png)
+![Trello Board](/resources/trello_progress1.png)
+![Trello Board](/resources/wireframes_card.png)
+![Trello Board](/resources/trello_progress.png)
+![Trello Board](/resources/trello_progress2.png)
+![Trello Board](/resources/design_card.png)
+![Trello Board](/resources/trello_98.png)
 
