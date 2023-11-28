@@ -306,13 +306,13 @@ The following software was used for project management and planning:
 
 The full trello board can be viewed here: [Trello Board](https://trello.com/b/wGXnXTBK/azure-splash)
 
-![Trello Board](/resources/trello_start.png)
-![Trello Board](/resources/trello_setup-card.png)
-![Trello Board](/resources/complete_setup.png)
-![Trello Board](/resources/trello_progress1.png)
-![Trello Board](/resources/wireframes_card.png)
-![Trello Board](/resources/trello_progress.png)
-![Trello Board](/resources/trello_progress2.png)
-![Trello Board](/resources/design_card.png)
-![Trello Board](/resources/trello_98.png)
+![Trello Board](./resources/trello_start.png)
+![Trello Board](./resources/trello_setup-card.png)
+![Trello Board](./resources/complete_setup.png)
+![Trello Board](./resources/trello_progress1.png)
+![Trello Board](./resources/wireframes_card.png)
+![Trello Board](./resources/trello_progress.png)
+![Trello Board](./resources/trello_progress2.png)
+![Trello Board](./resources/design_card.png)
+![Trello Board](./resources/trello_98.png)
 
