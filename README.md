@@ -86,8 +86,6 @@ The application will be aimed at everyone that enjoys swimming of all experience
 The application will be designed with user experience in mind, as the pools are expected to be used by people of all ages. This will mean that the application will cater to both tech-savvy users and those less familiar with technology.
 
 
-
-
 ### Tech Stack
 
 - **Frontend:** HTML5, CSS, REACT.JS, JavaScript
@@ -104,9 +102,8 @@ The application will be designed with user experience in mind, as the pools are 
 
 ### Data Descriptions
 
-<table>
-<tr><th>Customer Accounts </th><th>Workers Accounts</th></tr>
-<tr><td>
+
+### Customer Accounts
 
 Variable | Description
 | ----------- | ----------- |
@@ -119,7 +116,9 @@ _email | Email |
 _dob | Date Of Birth |
 _prmadd | Primary address |
 
-</td><td>
+---
+
+#### Worker Accounts
 
 Variable | Description
 | ----------- | ----------- |
@@ -134,11 +133,9 @@ _prmadd | Primary address
 _usrprv | User privileges
 _role | Role/Position
 
-</td></tr> </table>
+---
 
-<table>
-<tr><th>Bookings </th><th>Lanes and Timeslots</th></tr>
-<tr><td>
+### Bookings
 
 Variable | Description
 | ----------- | ----------- |
@@ -150,7 +147,9 @@ _bkdate | Date Of Booking
 _lane | Lane For Booking
 _pool_id | pool ID
 
-</td><td> 
+---
+
+### Lanes & Timeslots
 
 Variable | Description
 | ----------- | ----------- |
@@ -161,7 +160,8 @@ _tmslot | Timeslot for booking
 _lane | Lane Booking
 _bkdate | Date Of Booking
 
-</td></tr> </table>
+---
+
 
 ## Application Architecture Diagram
 
