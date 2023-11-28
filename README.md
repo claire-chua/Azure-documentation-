@@ -86,6 +86,72 @@ The application will be designed with user experience in mind, as the pools are 
 
 <img  alt="Data Flow"   src="./resources/Aquatic_DFD.png" />
 
+### Data Descriptions
+
+<table>
+<tr><th>Customer Accounts </th><th>Workers Accounts</th></tr>
+<tr><td>
+
+Variable | Description
+| ----------- | ----------- |
+ _id | Customer ID |
+ _date_created | Date account created |
+_Firstname | Customer first name |
+_Lastname | Customer last name |
+_password | Password |
+_email | Email |
+_dob | Date Of Birth |
+_prmadd | Primary address |
+
+</td><td>
+
+Variable | Description
+| ----------- | ----------- |
+_id | Worker ID
+ | _date_created | Date account created
+_Firstname | Worker first name
+_Lastname | Worker last name
+_password | Password
+_email | Email
+_dob | Date Of Birth
+_prmadd | Primary address
+_usrprv | User privileges
+_role | Role/Position
+
+</td></tr> </table>
+
+<table>
+<tr><th>Bookings </th><th>Lanes and Timeslots</th></tr>
+<tr><td>
+
+Variable | Description
+| ----------- | ----------- |
+_id | Booking ID
+_date_created | Date booking created
+_user_id | associated User ID 
+_tmslot | Timeslot for booking
+_bkdate | Date Of Booking
+_lane | Lane For Booking
+_pool_id | pool ID
+
+</td><td> 
+
+Variable | Description
+| ----------- | ----------- |
+_outdr_id | Outdoor pool ID
+_indr_id | Indoor pool ID
+_date_created | Date account created
+_tmslot | Timeslot for booking
+_lane | Lane Booking
+_bkdate | Date Of Booking
+
+</td></tr> </table>
+
+
+
+
+
+
 ## Application Architecture Diagram
 
 The application architecture diagram displays the structure of the Azure Splash app, and the flow of data. The application is made up of three components: frontend, backend and database.
