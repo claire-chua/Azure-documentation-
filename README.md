@@ -5,6 +5,22 @@
 Documentation           
 =======================
 
+## Contents
+1. [Purpose](#purpose)
+    1. [Functionality & Features](#functionality--features)
+    2. [Target Audience](#target-audience)
+    3. [Tech Stack](#tech-stack)
+2. [Dataflow Diagram](#data-flow-diagram)
+    1. [Data Description](#data-descriptions)
+3. [Application Architecture Diagram](#application-architecture-diagram)
+3. [User Stories](#user-stories)
+4. [Wireframes](#wireframes)
+    1. [Mobile](#mobile-design)
+    2. [Desktop & Tablet](#desktop--tablet)
+5. [Project Management](#project-management)
+
+---
+
  ## Purpose
 
 We were recently approached by a client; an owner of a freshly renovated aquatic centre, Azure Splash. Due to the high volume of patrons, the centre has had to implement mandatory reservations for each pool lane. There are currently two pools with a total of 6 lanes per pool. At the moment, the only way to reserve a lane is via phone or in-person as the facility does not have a website.This has led to multiple customers walking-in and unable to go for a swim, leaving them unsatisfied and resulting in customers visiting a competitor or worse yet, not continuing their patronage. Further, it was keeping staff tied to the phones in order to keep up with reservations, and preventing them from fulfilling their other duties.
@@ -146,7 +162,6 @@ _lane | Lane Booking
 _bkdate | Date Of Booking
 
 </td></tr> </table>
-
 
 ## Application Architecture Diagram
 
