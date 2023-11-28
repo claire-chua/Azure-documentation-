@@ -1,5 +1,5 @@
  <p align="center">
- <img  alt="mobile wireframe"  height="200px" width="200px" src="./resources/logo.png" />
+ <img  alt="mobile wireframe"  height="300px" width="200px" src="./resources/logo.png" />
  </p>
 
 Documentation           
