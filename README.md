@@ -177,7 +177,7 @@ The application architecture diagram displays the structure of the Azure Splash 
 Stacy is a 45 year-old manager at the aquatic centre. She has been tasked with overseeing operations at the facility, and ensuring that both customers and workers are satisfied.
 
 #### Goals and Behaviour
-Stacy would like for customers to stay informed on all matters regarding the facility, such as maintenance and services. Further, she would like to alter lanes or times available in the case of changes due to maintenace or public holidays etc. Next, she would like to view current and future bookings, to ensure that there are an appropriate number of staff to handle all required duties. 
+Stacy would like for customers to stay informed on all matters regarding the facility, such as maintenance and services. Further, she would like to alter lanes or times available in the case of changes due to maintenance or public holidays etc. Next, she would like to view current and future bookings, to ensure that there are an appropriate number of staff to handle all required duties. 
 
 ### Admin 
 
