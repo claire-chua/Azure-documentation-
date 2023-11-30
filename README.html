@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>README.md</title>
+<meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+
+<style>
+/* https://github.com/microsoft/vscode/blob/master/extensions/markdown-language-features/media/markdown.css */
+/*---------------------------------------------------------------------------------------------
+ *  Copyright (c) Microsoft Corporation. All rights reserved.
+ *  Licensed under the MIT License. See License.txt in the project root for license information.
+ *--------------------------------------------------------------------------------------------*/
+
+body {
+	font-family: var(--vscode-markdown-font-family, -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif);
+	font-size: var(--vscode-markdown-font-size, 14px);
+	padding: 0 26px;
+	line-height: var(--vscode-markdown-line-height, 22px);
+	word-wrap: break-word;
+}
+
+#code-csp-warning {
+	position: fixed;
+	top: 0;
+	right: 0;
+	color: white;
+	margin: 16px;
+	text-align: center;
+	font-size: 12px;
+	font-family: sans-serif;
+	background-color:#444444;
+	cursor: pointer;
+	padding: 6px;
+	box-shadow: 1px 1px 1px rgba(0,0,0,.25);
+}
+
+#code-csp-warning:hover {
+	text-decoration: none;
+	background-color:#007acc;
+	box-shadow: 2px 2px 2px rgba(0,0,0,.25);
+}
+
+body.scrollBeyondLastLine {
+	margin-bottom: calc(100vh - 22px);
+}
+
+body.showEditorSelection .code-line {
+	position: relative;
+}
+
+body.showEditorSelection .code-active-line:before,
+body.showEditorSelection .code-line:hover:before {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 0;
+	left: -12px;
+	height: 100%;
+}
+
+body.showEditorSelection li.code-active-line:before,
+body.showEditorSelection li.code-line:hover:before {
+	left: -30px;
+}
+
+.vscode-light.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.15);
+}
+
+.vscode-light.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(0, 0, 0, 0.40);
+}
+
+.vscode-light.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-dark.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.4);
+}
+
+.vscode-dark.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 255, 255, 0.60);
+}
+
+.vscode-dark.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+.vscode-high-contrast.showEditorSelection .code-active-line:before {
+	border-left: 3px solid rgba(255, 160, 0, 0.7);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line:hover:before {
+	border-left: 3px solid rgba(255, 160, 0, 1);
+}
+
+.vscode-high-contrast.showEditorSelection .code-line .code-line:hover:before {
+	border-left: none;
+}
+
+img {
+	max-width: 100%;
+	max-height: 100%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+a:focus,
+input:focus,
+select:focus,
+textarea:focus {
+	outline: 1px solid -webkit-focus-ring-color;
+	outline-offset: -1px;
+}
+
+hr {
+	border: 0;
+	height: 2px;
+	border-bottom: 2px solid;
+}
+
+h1 {
+	padding-bottom: 0.3em;
+	line-height: 1.2;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+}
+
+h1, h2, h3 {
+	font-weight: normal;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+table > thead > tr > th {
+	text-align: left;
+	border-bottom: 1px solid;
+}
+
+table > thead > tr > th,
+table > thead > tr > td,
+table > tbody > tr > th,
+table > tbody > tr > td {
+	padding: 5px 10px;
+}
+
+table > tbody > tr + tr > td {
+	border-top: 1px solid;
+}
+
+blockquote {
+	margin: 0 7px 0 5px;
+	padding: 0 16px 0 10px;
+	border-left-width: 5px;
+	border-left-style: solid;
+}
+
+code {
+	font-family: Menlo, Monaco, Consolas, "Droid Sans Mono", "Courier New", monospace, "Droid Sans Fallback";
+	font-size: 1em;
+	line-height: 1.357em;
+}
+
+body.wordWrap pre {
+	white-space: pre-wrap;
+}
+
+pre:not(.hljs),
+pre.hljs code > div {
+	padding: 16px;
+	border-radius: 3px;
+	overflow: auto;
+}
+
+pre code {
+	color: var(--vscode-editor-foreground);
+	tab-size: 4;
+}
+
+/** Theming */
+
+.vscode-light pre {
+	background-color: rgba(220, 220, 220, 0.4);
+}
+
+.vscode-dark pre {
+	background-color: rgba(10, 10, 10, 0.4);
+}
+
+.vscode-high-contrast pre {
+	background-color: rgb(0, 0, 0);
+}
+
+.vscode-high-contrast h1 {
+	border-color: rgb(0, 0, 0);
+}
+
+.vscode-light table > thead > tr > th {
+	border-color: rgba(0, 0, 0, 0.69);
+}
+
+.vscode-dark table > thead > tr > th {
+	border-color: rgba(255, 255, 255, 0.69);
+}
+
+.vscode-light h1,
+.vscode-light hr,
+.vscode-light table > tbody > tr + tr > td {
+	border-color: rgba(0, 0, 0, 0.18);
+}
+
+.vscode-dark h1,
+.vscode-dark hr,
+.vscode-dark table > tbody > tr + tr > td {
+	border-color: rgba(255, 255, 255, 0.18);
+}
+
+</style>
+
+<style>
+/* Tomorrow Theme */
+/* http://jmblog.github.com/color-themes-for-google-code-highlightjs */
+/* Original theme - https://github.com/chriskempson/tomorrow-theme */
+
+/* Tomorrow Comment */
+.hljs-comment,
+.hljs-quote {
+	color: #8e908c;
+}
+
+/* Tomorrow Red */
+.hljs-variable,
+.hljs-template-variable,
+.hljs-tag,
+.hljs-name,
+.hljs-selector-id,
+.hljs-selector-class,
+.hljs-regexp,
+.hljs-deletion {
+	color: #c82829;
+}
+
+/* Tomorrow Orange */
+.hljs-number,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-literal,
+.hljs-type,
+.hljs-params,
+.hljs-meta,
+.hljs-link {
+	color: #f5871f;
+}
+
+/* Tomorrow Yellow */
+.hljs-attribute {
+	color: #eab700;
+}
+
+/* Tomorrow Green */
+.hljs-string,
+.hljs-symbol,
+.hljs-bullet,
+.hljs-addition {
+	color: #718c00;
+}
+
+/* Tomorrow Blue */
+.hljs-title,
+.hljs-section {
+	color: #4271ae;
+}
+
+/* Tomorrow Purple */
+.hljs-keyword,
+.hljs-selector-tag {
+	color: #8959a8;
+}
+
+.hljs {
+	display: block;
+	overflow-x: auto;
+	color: #4d4d4c;
+	padding: 0.5em;
+}
+
+.hljs-emphasis {
+	font-style: italic;
+}
+
+.hljs-strong {
+	font-weight: bold;
+}
+</style>
+
+<style>
+/*
+ * Markdown PDF CSS
+ */
+
+ body {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe WPC", "Segoe UI", "Ubuntu", "Droid Sans", sans-serif, "Meiryo";
+	padding: 0 12px;
+}
+
+pre {
+	background-color: #f8f8f8;
+	border: 1px solid #cccccc;
+	border-radius: 3px;
+	overflow-x: auto;
+	white-space: pre-wrap;
+	overflow-wrap: break-word;
+}
+
+pre:not(.hljs) {
+	padding: 23px;
+	line-height: 19px;
+}
+
+blockquote {
+	background: rgba(127, 127, 127, 0.1);
+	border-color: rgba(0, 122, 204, 0.5);
+}
+
+.emoji {
+	height: 1.4em;
+}
+
+code {
+	font-size: 14px;
+	line-height: 19px;
+}
+
+/* for inline code */
+:not(pre):not(.hljs) > code {
+	color: #C9AE75; /* Change the old color so it seems less like an error */
+	font-size: inherit;
+}
+
+/* Page Break : use <div class="page"/> to insert page break
+-------------------------------------------------------- */
+.page {
+	page-break-after: always;
+}
+
+</style>
+
+<script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+</head>
+<body>
+  <script>
+    mermaid.initialize({
+      startOnLoad: true,
+      theme: document.body.classList.contains('vscode-dark') || document.body.classList.contains('vscode-high-contrast')
+          ? 'dark'
+          : 'default'
+    });
+  </script>
+ <p align="center">
+ <img  alt="mobile wireframe"  height="300px" width="200px" src="./resources/logo.png" />
+ </p>
+<h1 id="documentation">Documentation</h1>
+<h2 id="contents">Contents</h2>
+<ol>
+<li><a href="#purpose">Purpose</a>
+<ol>
+<li><a href="#functionality--features">Functionality &amp; Features</a></li>
+<li><a href="#target-audience">Target Audience</a></li>
+<li><a href="#tech-stack">Tech Stack</a></li>
+</ol>
+</li>
+<li><a href="#data-flow-diagram">Dataflow Diagram</a>
+<ol>
+<li><a href="#data-descriptions">Data Description</a></li>
+</ol>
+</li>
+<li><a href="#application-architecture-diagram">Application Architecture Diagram</a></li>
+<li><a href="#user-stories">User Stories</a></li>
+<li><a href="#wireframes">Wireframes</a>
+<ol>
+<li><a href="#mobile-design">Mobile</a></li>
+<li><a href="#desktop--tablet">Desktop &amp; Tablet</a></li>
+</ol>
+</li>
+<li><a href="#project-management">Project Management</a></li>
+</ol>
+<hr>
+<h2 id="purpose">Purpose</h2>
+<p>We were recently approached by a client; an owner of a freshly renovated aquatic centre, Azure Splash. Due to the high volume of patrons, the centre has had to implement mandatory reservations for each pool lane. There are currently two pools with a total of 6 lanes per pool. At the moment, the only way to reserve a lane is via phone or in-person as the facility does not have a website.This has led to multiple customers walking-in and unable to go for a swim, leaving them unsatisfied and resulting in customers visiting a competitor or worse yet, not continuing their patronage. Further, it was keeping staff tied to the phones in order to keep up with reservations, and preventing them from fulfilling their other duties.</p>
+<p>The goal for this web application is to enable users to make a booking for available lanes in the allocated time slots. The slots are for half an hour, and each customer can reserve a maximum of two consecutive slots. This will allow customers to be guaranteed a lane, and for staff to be freed up with assisting customers in the venue. In the future, they would like to expand their services by adding a sauna. As such, a ‘coming soon’ booking space for this will be displayed on the web application. This will also enable the centre to introduce other services, such as swimming classes in the future.</p>
+<p>The web application will also promote the business by showing off the brand new facilities, as well as the competitive prices. It will also encourage users to create an account, to view availability and make bookings as this will be unavailable to users without an account.The overarching goal is to ensure that the pool is always booked, hence guaranteeing customers a lane when they turn up for a swim.</p>
+<h2 id="functionality--features">Functionality &amp; Features</h2>
+<h4 id="browsing-non-member">Browsing (non-member)</h4>
+<p>The user will be able to:</p>
+<ul>
+<li>View all the services available at the centre</li>
+<li>Send enquiries with the ‘contact us’ form</li>
+<li>View opening hours and contact details</li>
+<li>View pricing</li>
+<li>Create an account</li>
+</ul>
+<h4 id="browsing-logged-member---customer">Browsing (logged-member - Customer)</h4>
+<p>The user will be able to:</p>
+<ul>
+<li>View all the services available at the centre</li>
+<li>Send enquiries with the ‘contact us’ form</li>
+<li>View opening hours and all contact details</li>
+<li>View pricing</li>
+<li>View bookings page</li>
+<li>View lane availability</li>
+<li>Create/view/cancel their own bookings</li>
+<li>View own profile</li>
+</ul>
+<h4 id="browsing-logged-in-member---workers">Browsing (logged in member - Workers)</h4>
+<p>The user will be able to:</p>
+<ul>
+<li>View all the services available at the centre</li>
+<li>Send enquiries with the ‘contact us’ form</li>
+<li>View opening hours and contact details</li>
+<li>View pricing</li>
+<li>View bookings page</li>
+<li>View lane availability</li>
+<li>Create/view/cancel all bookings</li>
+<li>View all profiles</li>
+<li>Create new Customer profiles</li>
+</ul>
+<h4 id="browsing-logged-in-member--admin">Browsing (logged in member- Admin)</h4>
+<p>The user will be able to:</p>
+<ul>
+<li>View all the services available at the centre</li>
+<li>Send enquiries with the ‘contact us’  form</li>
+<li>View opening hours and contact details</li>
+<li>View/edit pricing</li>
+<li>View bookings page</li>
+<li>View/edit/delete lane availability</li>
+<li>Create/view/cancel all bookings</li>
+<li>View all profiles</li>
+<li>Create new profiles(admin, worker, customer)</li>
+<li>Create/edit/delete services</li>
+</ul>
+<h3 id="target-audience">Target Audience</h3>
+<p>The application will be aimed at everyone that enjoys swimming of all experience levels, working or living in the local area. Further, there will be emphasis on future growth of the business and expansion of services that can be expected in the near future, such as swimming classes for all ages.</p>
+<p>The application will be designed with user experience in mind, as the pools are expected to be used by people of all ages. This will mean that the application will cater to both tech-savvy users and those less familiar with technology.</p>
+<h3 id="tech-stack">Tech Stack</h3>
+<ul>
+<li><strong>Frontend:</strong> HTML5, CSS, REACT.JS, JavaScript</li>
+<li><strong>Backend:</strong> Node, Express.JS</li>
+<li><strong>Database:</strong> Mongo. Mongoose</li>
+<li><strong>Deployment:</strong> Heroku (backend), Netlify (frontend)</li>
+<li><strong>Project Management Tools:</strong> Discord, Trello</li>
+<li><strong>Utilities:</strong> draw.io, Lucidchart, Figma</li>
+<li><strong>DevOps:</strong> Github, VS Code</li>
+</ul>
+<h2 id="data-flow-diagram">Data Flow Diagram</h2>
+<img  alt="Data Flow"   src="./resources/Aquatic_DFD.png" />
+<h3 id="data-descriptions">Data Descriptions</h3>
+<table>
+<tr><th>Customer Accounts </th><th>Workers Accounts</th></tr>
+<tr><td>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_id</td>
+<td>Customer ID</td>
+</tr>
+<tr>
+<td>_date_created</td>
+<td>Date account created</td>
+</tr>
+<tr>
+<td>_Firstname</td>
+<td>Customer first name</td>
+</tr>
+<tr>
+<td>_Lastname</td>
+<td>Customer last name</td>
+</tr>
+<tr>
+<td>_password</td>
+<td>Password</td>
+</tr>
+<tr>
+<td>_email</td>
+<td>Email</td>
+</tr>
+<tr>
+<td>_dob</td>
+<td>Date Of Birth</td>
+</tr>
+<tr>
+<td>_prmadd</td>
+<td>Primary address</td>
+</tr>
+</tbody>
+</table>
+</td><td>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_id</td>
+<td>Worker ID</td>
+</tr>
+<tr>
+<td>_date_created</td>
+<td>Date account created</td>
+</tr>
+<tr>
+<td>_Firstname</td>
+<td>Worker first name</td>
+</tr>
+<tr>
+<td>_Lastname</td>
+<td>Worker last name</td>
+</tr>
+<tr>
+<td>_password</td>
+<td>Password</td>
+</tr>
+<tr>
+<td>_email</td>
+<td>Email</td>
+</tr>
+<tr>
+<td>_dob</td>
+<td>Date Of Birth</td>
+</tr>
+<tr>
+<td>_prmadd</td>
+<td>Primary address</td>
+</tr>
+<tr>
+<td>_usrprv</td>
+<td>User privileges</td>
+</tr>
+<tr>
+<td>_role</td>
+<td>Role/Position</td>
+</tr>
+</tbody>
+</table>
+</td></tr> </table>
+<table>
+<tr><th>Bookings </th><th>Lanes and Timeslots</th></tr>
+<tr><td>
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_id</td>
+<td>Booking ID</td>
+</tr>
+<tr>
+<td>_date_created</td>
+<td>Date booking created</td>
+</tr>
+<tr>
+<td>_user_id</td>
+<td>associated User ID</td>
+</tr>
+<tr>
+<td>_tmslot</td>
+<td>Timeslot for booking</td>
+</tr>
+<tr>
+<td>_bkdate</td>
+<td>Date Of Booking</td>
+</tr>
+<tr>
+<td>_lane</td>
+<td>Lane For Booking</td>
+</tr>
+<tr>
+<td>_pool_id</td>
+<td>pool ID</td>
+</tr>
+</tbody>
+</table>
+</td><td> 
+<table>
+<thead>
+<tr>
+<th>Variable</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>_outdr_id</td>
+<td>Outdoor pool ID</td>
+</tr>
+<tr>
+<td>_indr_id</td>
+<td>Indoor pool ID</td>
+</tr>
+<tr>
+<td>_date_created</td>
+<td>Date account created</td>
+</tr>
+<tr>
+<td>_tmslot</td>
+<td>Timeslot for booking</td>
+</tr>
+<tr>
+<td>_lane</td>
+<td>Lane Booking</td>
+</tr>
+<tr>
+<td>_bkdate</td>
+<td>Date Of Booking</td>
+</tr>
+</tbody>
+</table>
+</td></tr> </table>
+<h2 id="application-architecture-diagram">Application Architecture Diagram</h2>
+<p>The application architecture diagram displays the structure of the Azure Splash app, and the flow of data. The application is made up of three components: frontend, backend and database.</p>
+<p><img src="https://github.com/Azure-Splash/Azure-documentation-/assets/126572960/0da3a3a7-3ba7-41f5-8a01-ec72bff17590" alt="Screenshot 2023-11-26 222905"></p>
+<h2 id="user-stories">User Stories</h2>
+<h3 id="persona-1-stacy">Persona 1: Stacy</h3>
+<h4 id="background">Background</h4>
+<p>Stacy is a 45 year-old manager at the aquatic centre. She has been tasked with overseeing operations at the facility, and ensuring that both customers and workers are satisfied.</p>
+<h4 id="goals-and-behaviour">Goals and Behaviour</h4>
+<p>Stacy would like for customers to stay informed on all matters regarding the facility, such as maintenance and services. Further, she would like to alter lanes or times available in the case of changes due to maintenance or public holidays etc. Next, she would like to view current and future bookings, to ensure that there are an appropriate number of staff to handle all required duties.</p>
+<h3 id="admin">Admin</h3>
+<p>As an admin, I want to be able to view all bookings so that I may be prepared and organised for current and upcoming bookings.</p>
+<p>As an admin, I want to block lanes and time slots for maintenance to ensure that the facility is able to undergo any required upkeep with minimal disruptions.</p>
+<p>As an admin, I want to create and manage the bookings for additional spaces, so that I may expand the services offered to customers online.</p>
+<p>As an admin, I want to be able to create time slots and lanes to effectively manage the availability of the aquatic centre.</p>
+<hr>
+<h3 id="persona-2-jean">Persona 2: Jean</h3>
+<h4 id="background">Background</h4>
+<p>Jean is a 26 year-old avid swimmer, who works at an office from 9 - 5 p.m. She prefers to swim daily, typically in the early morning.</p>
+<h4 id="goals-and-behaviour">Goals and Behaviour</h4>
+<p>Jean would like to book lanes in advance, to ensure that she is able to complete her morning swim daily.
+Additionally, she would like the entire process to be seamless and flexible.</p>
+<h3 id="customer">Customer</h3>
+<p>As a customer, I want to book a lane in a specific time slot to ensure that I am able to swim, regardless of the number of customers in the aquatic centre.</p>
+<p>As a customer, I want to be able to view available times and lanes to ensure that there are no conflicts, whilst effectively choosing the best option.</p>
+<p>As a customer, I would like to edit or delete my own bookings in the case of any changes in my schedule.</p>
+<hr>
+<h3 id="persona-3-tom">Persona 3: Tom</h3>
+<h4 id="background">Background</h4>
+<p>Tom is a 30 year-old worker at the aquatic centre. He enjoys working there, but has noticed that the recent spike in customers has resulted in a number of people unable to swim. Further, this has resulted in a recent increase in bookings through the phone, and preventing staff from completing other duties.</p>
+<h4 id="goals-and-behaviour">Goals and Behaviour</h4>
+<p>Tom would like for customers to be able to view available lanes and time slots, and complete their own bookings instead of calling in to check with staff.
+He would also like to have an overview of all the current and future bookings, as well as unavailable times for lanes to stay informed.</p>
+<h3 id="worker">Worker</h3>
+<p>As a worker, I want to delete and edit any booking to ensure that I’m able to assist customers with their requests.</p>
+<p>As a worker, I would like to see available times and lanes to assist customers with their bookings.</p>
+<p>As a worker, I would like to be able to see relevant information regarding maintenance so that I may provide warnings to customers and evacuate the areas if necessary.</p>
+<h2 id="wireframes">Wireframes</h2>
+<p>Figma was used to create wireframes for this project. We decided to use image and full color instead of placeholder images. This will allow quicker approval from the client. After discussions with the owner of Azure Splash, we worked out that most of the users will be using a mobile device. With this in mind we decided to take a mobile first approach to the design.</p>
+<h3 id="design-features">Design Features</h3>
+<h4 id="color-scheme">Color Scheme</h4>
+<p><img src="/resources/color_scheme.png" alt="Website colors"></p>
+<h3 id="buttons">Buttons</h3>
+<p>The buttons will be designed with a a slight rounded corner on a rectangle. The standard button will have Azure as a color with black text. Using OnHover the button will change to lighter color, text will be capitalized and white.</p>
+<p><img src="/resources/buttons.png" alt="Button examples"></p>
+<h3 id="nav-bar">Nav Bar</h3>
+<p>The Nav Bar will be sticky at the top of the page making the menu accessible when scrolling the content on each page. The same color format then the buttons will be used on the Nav Bar. This will keep the site looking uniform and helping the user navigate the site easier.</p>
+<p><img src="/resources/navbar.png" alt="Navbar examples"></p>
+<h3 id="mobile-design">Mobile Design</h3>
+<hr>
+<h4 id="home--about-us-pages">Home &amp; About Us Pages</h4>
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_home.png" />
+<img  alt="mobile wireframe" height="500px" width="500px" src="./resources/mobile_about.png" />
+<h4 id="services--contact-pages">Services &amp; Contact Pages</h4>
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_services.png" />
+<img  alt="mobile wireframe" height="500px" width="500px" src="./resources/mobile_contact.png" />
+<h4 id="login--register-pages">Login &amp; Register Pages</h4>
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_login.png" />
+<h4 id="bookings-pages">Bookings Pages</h4>
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_bookings.png" />
+<img  alt="mobile wireframe"  height="500px" width="500px" src="./resources/mobile_bookings1.png" />
+<h3 id="desktop--tablet">Desktop &amp; Tablet</h3>
+<hr>
+<h4 id="home--about-us-pages">Home &amp; About Us Pages</h4>
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_home.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_about.png" />
+<h4 id="services--contact-pages">Services &amp; Contact Pages</h4>
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_services.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_contact.png" />
+<h4 id="login--register-pages">Login &amp; Register Pages</h4>
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_login.png" />
+<h4 id="bookings-pages">Bookings Pages</h4>
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings1.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings2.png" />
+<img  alt="desktop wireframe"  height="500px" width="600px" src="./resources/desk_bookings3.png" />
+<h2 id="project-management">Project Management</h2>
+<p>The following software was used for project management and planning:</p>
+<ul>
+<li>Discord: was used to communicate with each other, text, voice and screen sharing</li>
+<li>Google Docs: used to share ideas and images and other information before loading onto readme.md file</li>
+<li>Trello: for agile planning. Cards and lists were created with the tasks that needed to be completed with due dates. Questions, comments and feedback were also placed on the cards. The requirements were put into cards and then split to task for the team to complete.</li>
+</ul>
+<p>The full trello board can be viewed here: <a href="https://trello.com/b/wGXnXTBK/azure-splash">Trello Board</a></p>
+<p><img src="/resources/trello_start.png" alt="Trello Board">
+<img src="/resources/trello_setup-card.png" alt="Trello Board">
+<img src="/resources/complete_setup.png" alt="Trello Board">
+<img src="/resources/trello_progress1.png" alt="Trello Board">
+<img src="/resources/wireframes_card.png" alt="Trello Board">
+<img src="/resources/trello_progress.png" alt="Trello Board">
+<img src="/resources/trello_progress2.png" alt="Trello Board">
+<img src="/resources/design_card.png" alt="Trello Board">
+<img src="/resources/trello_98.png" alt="Trello Board"></p>
+
+</body>
+</html>
