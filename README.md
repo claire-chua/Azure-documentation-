@@ -90,7 +90,7 @@ The application will be designed with user experience in mind, as the pools are 
 
 - **Frontend:** HTML5, CSS, REACT.JS, JavaScript
 - **Backend:** Node, Express.JS
-- **Database:** Mongo. Mongoose
+- **Database:** Mongo, Mongoose
 - **Deployment:** Heroku (backend), Netlify (frontend)
 - **Project Management Tools:** Discord, Trello
 - **Utilities:** draw.io, Lucidchart, Figma
